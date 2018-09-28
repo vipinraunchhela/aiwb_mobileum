@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Permanent Roamers</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="../aiwb-dashboard.html" class="home-link">
+                            <span class="black-ham">
+                                <span class="home-icon"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../wholesale/wholesale-main/wholesale.html">
+                            <span class="icon">
+                                <span class="icon-Dashboard"> </span>
+                            </span>
+                            <span class="text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../wholesale/wholesale-roaming-partnership/wholesale-roaming-partnership.html">
+                            <span class="icon">
+                                <span class="icon-My-ticket"> </span>
+                            </span>
+                            <span class="text">Wholesale Partners</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a  href="../wholesale/wholesale-details-expanded/wholesale-details-expanded.html">
+                            <span class="icon">
+                                <span class="icon-My-ticket"> </span>
+                            </span>
+                            <span class="text">Wholesale Agreements</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="permanent-roamer.html">
+                            <span class="icon">
+                                <span class="icon-My-ticket"> </span>
+                            </span>
+                            <span class="text">Permanent Roamers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://datastudio.google.com/embed/u/0/reporting/1OHjuECt7mZBiXGuEG8z4k91jO_YNWMlL/page/efUN">
+                            <span class="icon">
+                                <span class="icon-My-ticket"> </span>
+                            </span>
+                            <span class="text">Wholesale Position</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://115.112.115.75:8031/imas">
+                            <span class="icon"><span class="icon-Report">
+                                </span></span>
+                            <span class="text">Steering Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://galadriel.mobileum.com:8080">
+                            <span class="icon"><span class="icon-Report">
+                                </span></span>
+                            <span class="text">Interconnect Partner Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><span class="icon-help">
+                                </span></span>
+                            <span class="text">Support?FAQ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-section">
+
+                <div class="header header-new">
+                    <div class="site-logo">
+                        <img src="../images/logo1.png">
+                    </div>
+                    <div class="head-right">
+                        <div class="search">
+                            <span class="magnifier">
+                                <span class="icon-Search"></span>
+                            </span>
+                            <input type="text" name="search" placeholder="">
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="bellicon">
+                                        <span class="icon-notification"> </span>
+                                        <span class="badge">5</span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu notification">
+                                    <li><a href="#">
+                                            <div class="notification_text">
+                                                <span class="status icon-Assigned"></span>
+                                                Assigned 05 more <strong>By-Pass </strong>tickets in your account
+                                            </div>
+                                            <div class="timeblock">5min ago</div>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <div class="notification_text">
+                                                <span class="status icon-Assigned"></span>
+                                                Assigned 05 more <strong>By-Pass </strong>tickets in your account
+                                            </div>
+                                            <div class="timeblock">5min ago</div>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <div class="notification_text">
+                                                <span class="status icon-Assigned"></span>
+                                                Assigned 05 more <strong>By-Pass </strong>tickets in your account
+                                            </div>
+                                            <div class="timeblock">5min ago</div>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <div class="notification_text">
+                                                <span class="status icon-Assigned"></span>
+                                                Assigned 05 more <strong>By-Pass </strong>tickets in your account
+                                            </div>
+                                            <div class="timeblock">5min ago</div>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="icons/alex.png">
+                                    <span>Alex Sanders</span> <span class="caret"></span></a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">My Profile</a></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_body container">
+
+                    <div class="row">
+                        <div class="col-md-12 mt-2 mb-2 tab-btn">
+                            <button type="button" class="btn btn-primary ">This Month</button>
+                            <button type="button" class="btn btn-light ">This Quarter</button>
+                            <button type="button" class="btn btn-light ">This Year</button>
+                            <button type="button" class="btn btn-light ">Custom</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-container">
+                                <div id="main-trendline"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="statistics-container">
+                                <h2 class="text-center mt-0 mb-20">Permanent Roamers</h3>
+
+                                    <div class="row mb-15">
+                                        <div class="col-xs-4"></div>
+                                        <div class="col-xs-4">
+                                            <div class="text-center">
+                                                <h5><strong>Roamers</strong></h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-4">
+                                            <div class="text-center">
+                                                <h5><strong>CAGR</strong></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-15">
+                                        <div class="col-xs-4">
+                                            <h5><strong>Inbound</strong></h5>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="text-center">
+                                                <h5>6603</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-4">
+                                            <div class="text-center">
+                                                <h5>4.2%</h5>    
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <h5><strong>Outbound</strong></h5>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="text-center">
+                                                <h5>26410</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-4">
+                                            <div class="text-center">
+                                                <h5>24%</h5>    
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">Customer </h2>
+                            <h3 class="d-inline-block" class="d-inline-block"> - Permanent Roamer</h3>
+
+                            <div class="chart-container">
+                                <div id="customer-roamer-trendline"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">IOT </h2>
+                            <h3 class="d-inline-block"> - Permanent Roamer</h3>
+
+                            <div class="chart-container">
+                                <div id="iot-roamer-trendline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">Stay Duration </h2>
+                            <!--<h3 class="d-inline-block"> - Permanent Roamer</h3>-->
+
+                            <div class="chart-container">
+                                <div id="stay-duration-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">Silent Roamers </h2>
+                            <!--<h3 class="d-inline-block"> - Permanent Roamer</h3>-->
+
+                            <div class="chart-container">
+                                <div id="silent-roamers-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">Top APNs</h2>
+                            <!--<h3 class="d-inline-block"> - Permanent Roamer</h3>-->
+
+                            <div class="chart-container">
+                                <img src="../images/apns.png" class="img-responsive">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">PR - Device Types</h2>
+                            <!--<h3 class="d-inline-block"> - Permanent Roamer</h3>-->
+
+                            <div class="chart-container">
+                                <div id="pr-device-type-pie"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-20">
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">IOT Technology</h2>
+                            <!--<h3 class="d-inline-block"> - Permanent Roamer</h3>-->
+
+                            <div class="chart-container">
+                                <div id="iot-technology-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">IOT Device Type</h2>
+                            <!--<h3 class="d-inline-block"> - Permanent Roamer</h3>-->
+
+                            <div class="chart-container">
+                                <div id="device-type-pie"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">Top Inbound Partners</h2>
+                            <!--<h3 class="d-inline-block"> - Permanent Roamer</h3>-->
+
+                            <div class="chart-container">
+                                <img src="../images/top-op-rev.png" class="img-responsive">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2 class="d-inline-block">Top Outbound Partners</h2>
+                            <!--<h3 class="d-inline-block"> - Permanent Roamer</h3>-->
+
+                            <div class="chart-container">
+                                <img src="../images/neg-rev.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-xs-12">
+                            <div class="table-responsive custom scrollable-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Visited Country</th>
+                                            <th>Partner</th>
+                                            <th>Inboud #</th>
+                                            <th>Inboud Usage (MB)</th>
+                                            <th>Inbound Revenue ($)</th>
+                                            <th>Outbound #</th>
+                                            <th>Outbound Usage (MB)</th>
+                                            <th>Outbound Revenue ($)</th>
+                                            <th>Revenue ($)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Norway</td>
+                                            <td>Telenor</td>
+                                            <td>6400</td>
+                                            <td>60544</td>
+                                            <td>10897</td>
+                                            <td>3840</td>
+                                            <td>36326</td>
+                                            <td>3632</td>
+                                            <td>14530</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Spain</td>
+                                            <td>Movistar</td>
+                                            <td>3602</td>
+                                            <td>34074</td>
+                                            <td>6133</td>
+                                            <td>2161</td>
+                                            <td>20442</td>
+                                            <td>2044</td>
+                                            <td>8177</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Finland</td>
+                                            <td>Telia</td>
+                                            <td>3265</td>
+                                            <td>30886</td>
+                                            <td>5559</td>
+                                            <td>1959</td>
+                                            <td>18532</td>
+                                            <td>1853</td>
+                                            <td>7412</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Denmark</td>
+                                            <td>TDC</td>
+                                            <td>3105</td>
+                                            <td>29373</td>
+                                            <td>5287</td>
+                                            <td>1863</td>
+                                            <td>17623</td>
+                                            <td>1762</td>
+                                            <td>7049</td>
+                                        </tr>
+                                        <tr>
+                                            <td>United States</td>
+                                            <td>AT&amp;T Mobility</td>
+                                            <td>650</td>
+                                            <td>6149</td>
+                                            <td>1106</td>
+                                            <td>390</td>
+                                            <td>3689</td>
+                                            <td>368</td>
+                                            <td>1475</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Germany</td>
+                                            <td>Vodafone</td>
+                                            <td>2941</td>
+                                            <td>27821</td>
+                                            <td>5007</td>
+                                            <td>1764</td>
+                                            <td>16693</td>
+                                            <td>1669</td>
+                                            <td>6677</td>
+                                        </tr>
+                                        <tr>
+                                            <td>United Kingdom</td>
+                                            <td>EE</td>
+                                            <td>3300</td>
+                                            <td>31218</td>
+                                            <td>5619</td>
+                                            <td>1980</td>
+                                            <td>18730</td>
+                                            <td>1873</td>
+                                            <td>7492</td>
+                                        </tr>
+                                        <tr>
+                                            <td>France</td>
+                                            <td>Orange</td>
+                                            <td>2840</td>
+                                            <td>26866</td>
+                                            <td>4835</td>
+                                            <td>1704</td>
+                                            <td>16119</td>
+                                            <td>1611</td>
+                                            <td>6447</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thailand</td>
+                                            <td>DTAC</td>
+                                            <td>850</td>
+                                            <td>8041</td>
+                                            <td>1447</td>
+                                            <td>510</td>
+                                            <td>4824</td>
+                                            <td>482</td>
+                                            <td>1929</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    Highcharts.chart('main-trendline', {
+        exporting: {enabled: false},
+        credits: {enabled: false},
+        chart: {
+            height: 215,
+            type: 'area'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['1st', '5th', '10th', '15th', '20th', '25th', '30th', ],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Permanent Roamers (00\'s)'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 100;
+                }
+            }
+        },
+        tooltip: {
+            split: true,
+            valueSuffix: ''
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 0,
+                marker: {
+                    enabled: false,
+                    lineWidth: 0,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+                name: 'Inbound',
+                data: [8011, 13812, 8677, 13145, 10011, 7344, 12478],
+                color: "#8AE7AB"
+            }, {
+                name: 'Outbound',
+                data: [32232, 36453, 34232, 35120, 36232, 30899, 34453],
+                color: "#C4A2E9"
+            }]
+    });
+</script>
+
+<script type="text/javascript">
+    Highcharts.chart('customer-roamer-trendline', {
+        exporting: {enabled: false},
+        credits: {enabled: false},
+        chart: {
+            height: 215,
+            type: 'area'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['1st', '5th', '10th', '15th', '20th', '25th', '30th', ],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Permanent Roamers (00\'s)'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 100;
+                }
+            }
+        },
+        tooltip: {
+            split: true,
+            valueSuffix: ''
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 0,
+                marker: {
+                    enabled: false,
+                    lineWidth: 0,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+                name: 'Inbound',
+                data: [5607, 9668, 6073, 9201, 7007, 5140, 8734],
+                color: "#8AE7AB"
+            }, {
+                name: 'Outbound',
+                data: [22562, 25517, 23962, 24584, 25362, 21629, 24117],
+                color: "#C4A2E9"
+            }]
+    });
+    Highcharts.chart('stay-duration-bar', {
+        exporting: {enabled: false},
+        credits: {enabled: false},
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: [
+                '3W-5W',
+                '6W-8W',
+                '9W-16W',
+                '16+W'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'No. of Roamers'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+                name: 'Inbound',
+                data: [50000, 42000, 28473, 47859],
+                color: "#8AE7AB"
+
+            }, {
+                name: 'Outbound',
+                data: [40000, 36000, 16473, 28947],
+                color: "#C4A2E9"
+            }]
+    });
+    Highcharts.chart('silent-roamers-bar', {
+        exporting: {enabled: false},
+        credits: {enabled: false},
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: [
+                '3W-5W',
+                '6W-8W',
+                '9W-16W',
+                '16+W'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'No. of Roamers'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+                name: 'Consumer',
+                data: [30000, 19000, 17083, 28715],
+                color: "#8AE7AB"
+
+            }, {
+                name: 'IOT',
+                data: [20000, 22000, 11389, 19143],
+                color: "#C4A2E9"
+            }]
+    });
+    Highcharts.chart('iot-technology-bar', {
+        exporting: {enabled: false},
+        credits: {enabled: false},
+        legend: {enabled: false},
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: [
+                'MB IOT',
+                'Narrow Band',
+                '2G',
+                '3G',
+                'LTE'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'No. of Roamers'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+                name: 'Consumer',
+                data: [30000, 19000, 17083, 28715, 17083],
+                color: "#8AE7AB"
+
+            }]
+    });
+    Highcharts.chart('device-type-pie', {
+        exporting: {enabled: false},
+        credits: {enabled: false},
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                        name: 'Telit',
+                        y: 2491,
+                        sliced: true,
+                        selected: true
+                    }, {
+                        name: 'Cinterion',
+                        y: 1782
+                    }, {
+                        name: 'Huawei',
+                        y: 1688
+                    }, {
+                        name: 'Sierra Wireless',
+                        y: 1252
+                    }, {
+                        name: 'ZTE',
+                        y: 936
+                    }, {
+                        name: 'HP',
+                        y: 698
+                    }, {
+                        name: 'U-BLOX AG',
+                        y: 687
+                    }]
+            }]
+    });
+    Highcharts.chart('pr-device-type-pie', {
+        exporting: {enabled: false},
+        credits: {enabled: false},
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                        name: 'Telit',
+                        y: 2491,
+                        sliced: true,
+                        selected: true
+                    }, {
+                        name: 'Cinterion',
+                        y: 1782
+                    }, {
+                        name: 'Huawei',
+                        y: 1688
+                    }, {
+                        name: 'Sierra Wireless',
+                        y: 1252
+                    }, {
+                        name: 'ZTE',
+                        y: 936
+                    }, {
+                        name: 'HP',
+                        y: 698
+                    }, {
+                        name: 'U-BLOX AG',
+                        y: 687
+                    }]
+            }]
+    });
+</script>
+
+<script type="text/javascript">
+    Highcharts.chart('iot-roamer-trendline', {
+        exporting: {enabled: false},
+        credits: {enabled: false},
+        chart: {
+            height: 215,
+            type: 'area'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['1st', '5th', '10th', '15th', '20th', '25th', '30th', ],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Permanent Roamers (00\'s)'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 100;
+                }
+            }
+        },
+        tooltip: {
+            split: true,
+            valueSuffix: ''
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 0,
+                marker: {
+                    enabled: false,
+                    lineWidth: 0,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+                name: 'Inbound',
+                data: [2404, 4144, 2604, 3944, 3004, 2204, 3744],
+                color: "#8AE7AB"
+            }, {
+                name: 'Outbound',
+                data: [9670, 10936, 10270, 10536, 10870, 9270, 10336],
+                color: "#C4A2E9"
+            }]
+    });
+</script>
+</html>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Data Services</title>
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/custom.js"></script>
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/laptop.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/laptop.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800" rel="stylesheet">
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <div class="header-top"></div>
+            <div class="header-heading">
+                <div class="hea-head">
+                    <h2><a href="dashboard-cem.html">Roaming CEM Dashboard</a>  / <a href="dashboard-cem.html">Vodafone Australia</a> / Data Services</h2>
+                </div>
+                <div class="header-heading-icon">
+                    <ul>
+                        <li><a href=""><span class="icon1"></span></a></li>
+                        <li><a href="roaming-cem-dashboard.html"><span class="icon2"></span></a></li>
+                    </ul>
+                </div>
+            </div><!-- header-heading -->  
+        </header>
+
+        <!-- ===========header=========== -->
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../aiwb-dashboard.html" class="home-link">
+                        <span class="black-ham">
+                            <span class="home-icon"></span>
+                        </span>
+                    </a>
+                </li>
+                <li >
+                    <a href="dashboard-cem.html">
+                        <span class="icon">
+                            <span class="icon-Dashboard"> </span>
+                        </span>
+                        <span class="text">Network Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><span class="icon-help">
+                            </span></span>
+                        <span class="text">Support?FAQ</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="main-section">
+         
+<div id="current-status" class="tabcontent" style="display: block;">
+      <!-- tab-scroll -->
+      <div class="cur-sta-box1">
+            <div class="cur-sta-flex">
+               <div class="text">IMSI</div>
+               <div class="input-box">
+                <input type="text" name="" placeholder="345783921763" class="input-control">
+               </div><!--  -->
+            </div><!-- cur-sta-flex -->
+            <div class="cur-sta-flex">
+               <div class="text">MSISDN</div>
+               <div class="input-box">
+                <input type="text" name="" placeholder="" class="input-control">
+               </div><!--  -->
+            </div><!-- cur-sta-flex -->
+            <div class="cur-sta-flex">
+               <div class="text">From</div>
+               <div class="input-box">
+                <input type="date" name="" placeholder="28/01/2018" class="input-control date-icon">
+               </div><!--  -->
+            </div><!-- cur-sta-flex -->
+            <div class="cur-sta-flex">
+               <div class="text">To</div>
+               <div class="input-box">
+                <input type="date" name="" placeholder="02/02/2018" class="input-control date-icon">
+               </div><!--  -->
+            </div><!-- cur-sta-flex -->
+            <div class="cur-sta-flex">
+               <div class="input-box">
+                <input type="button" name="" value="SEARCH" class="btn-blue">
+               </div><!--  -->
+            </div><!-- cur-sta-flex -->
+        </div>
+
+        <div class="cur-sta-box2">
+          <div class="cur-sta-white-box">
+            <h4>Status</h4>
+            <div class="status-box-flex">
+              <div class="loc">
+                <div class="loc-flex">
+                  <div class="icons">
+                    <img src="images/icons/icons-24.png" class="mCS_img_loaded">
+                  </div>
+                  <div class="text">
+                    <h5>Location</h5>
+                    <p><span><img src="images/icons/icons-27.png" class="mCS_img_loaded"></span>Australia</p>
+                  </div>
+                </div><!-- loc-flex -->
+                <div class="loc-flex">
+                  <div class="icons">
+                    <img src="images/icons/icons-25.png" class="mCS_img_loaded">
+                  </div>
+                  <div class="text">
+                    <h5>Current Network</h5>
+                    <p>Vodafone Australia</p>
+                  </div>
+                </div><!-- loc-flex -->
+                <div class="loc-flex">
+                  <div class="icons">
+                    <img src="images/icons/icons-26.png" class="mCS_img_loaded">
+                  </div>
+                  <div class="text">
+                    <h5>Trip Start</h5>
+                    <p>28/01/2018  17:43  </p>
+                  </div>
+                </div><!-- loc-flex -->
+              </div><!-- loc -->
+              <div class="net">
+                <div id="pie-network" data-highcharts-chart="1"><div id="highcharts-70c90vn-5" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 196px; height: 155px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root " style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="196" height="155" viewBox="0 0 196 155"><desc>Created with Highcharts 6.1.4</desc><defs><clipPath id="highcharts-70c90vn-6"><rect x="0" y="0" width="96" height="155" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="196" height="155" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="0" y="0" width="96" height="155"></rect><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="0" y="0" width="96" height="155"></rect><g class="highcharts-series-group" data-z-index="3"><g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-pie-series highcharts-tracker " transform="translate(0,0) scale(1 1)" style="cursor:pointer;"><path fill="#cd1e1e" visibility="hidden" d="M 47.99226041825958 39.50000078817271 A 38 38 0 1 1 21.870504905493878 105.09075000985258 L 22.558123197454563 104.36467764117225 A 37 37 0 1 0 47.992464091463276 40.500000767431324 Z" class="highcharts-halo highcharts-color-0" data-z-index="-1" fill-opacity="0.25"></path><path fill="rgb(205,30,30)" d="M 47.99226041825958 39.50000078817271 A 38 38 0 1 1 21.870504905493878 105.09075000985258 L 48 77.5 A 0 0 0 1 0 48 77.5 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-0 "></path><path fill="rgb(75,178,150)" d="M 21.84292722482894 105.06460672373915 A 38 38 0 0 1 22.96084312718025 48.916077541766185 L 48 77.5 A 0 0 0 0 0 48 77.5 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-1 "></path><path fill="rgb(230,215,52)" d="M 22.98943956445189 48.89105268102659 A 38 38 0 0 1 47.94721876235328 39.50003665605778 L 48 77.5 A 0 0 0 0 0 48 77.5 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-2 "></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-pie-series " transform="translate(0,0) scale(1 1)"></g></g><text x="98" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="30"></text><g class="highcharts-legend" data-z-index="7" transform="translate(89,50)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="107" height="56" visibility="visible"></rect><g data-z-index="1"><g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-0" data-z-index="1" transform="translate(8,3)"><rect x="2" y="4" width="12" height="12" fill="#cd1e1e" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-1" data-z-index="1" transform="translate(8,18)"><rect x="2" y="4" width="12" height="12" fill="#4bb296" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-2" data-z-index="1" transform="translate(8,33)"><rect x="2" y="4" width="12" height="12" fill="#e6d734" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g></g></g></g><g class="highcharts-label highcharts-tooltip highcharts-color-0" style="pointer-events:none;white-space:nowrap;" data-z-index="8" transform="translate(2,-9999)" opacity="0" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box highcharts-shadow" d="M 3.5 0.5 L 153.5 0.5 C 156.5 0.5 156.5 0.5 156.5 3.5 L 156.5 41.5 C 156.5 44.5 156.5 44.5 153.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box highcharts-shadow" d="M 3.5 0.5 L 153.5 0.5 C 156.5 0.5 156.5 0.5 156.5 3.5 L 156.5 41.5 C 156.5 44.5 156.5 44.5 153.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box highcharts-shadow" d="M 3.5 0.5 L 153.5 0.5 C 156.5 0.5 156.5 0.5 156.5 3.5 L 156.5 41.5 C 156.5 44.5 156.5 44.5 153.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 153.5 0.5 C 156.5 0.5 156.5 0.5 156.5 3.5 L 156.5 41.5 C 156.5 44.5 156.5 44.5 153.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#cd1e1e" stroke-width="1"></path><text x="8" data-z-index="1" style="font-size:12px;color:#333333;cursor:default;fill:#333333;" y="20"><tspan style="font-size:11px">Series 1</tspan><tspan style="fill:#cd1e1e" x="8" dy="15">VF Australia</tspan><tspan dx="0">: </tspan><tspan style="font-weight:bold" dx="0">56.33%</tspan><tspan dx="0"> of total</tspan></text></g></svg><span class="highcharts-title" data-z-index="4" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 18px; position: absolute; white-space: normal; margin-left: 0px; margin-top: 0px; left: 0px; top: -3px; color: rgb(51, 51, 51); display: block; width: 152px;">Network Time Breakdown</span><div class="highcharts-legend" style="position: absolute; left: 89px; top: 50px; opacity: 1;"><div style="position: absolute; left: 0px; top: 0px; opacity: 1;"><div style="position: absolute; left: 0px; top: 0px; opacity: 1;"><div class="highcharts-legend-item highcharts-pie-series highcharts-color-0" style="position: absolute; left: 8px; top: 3px; opacity: 1;"><span data-z-index="2" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; text-overflow: ellipsis; cursor: pointer; overflow: hidden; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(51, 51, 51);">VF Australia</span></div><div class="highcharts-legend-item highcharts-pie-series highcharts-color-1" style="position: absolute; left: 8px; top: 18px; opacity: 1;"><span data-z-index="2" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; text-overflow: ellipsis; cursor: pointer; overflow: hidden; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(51, 51, 51);">Telstra</span></div><div class="highcharts-legend-item highcharts-pie-series highcharts-color-2" style="position: absolute; left: 8px; top: 33px; opacity: 1;"><span data-z-index="2" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; text-overflow: ellipsis; cursor: pointer; overflow: hidden; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(51, 51, 51);">Optus</span></div></div></div></div></div></div>
+              </div>
+            </div><!-- status-box-flex -->
+          </div>
+
+          <div class="cur-sta-white-box">
+            <h4>User Trip Experience</h4>
+              <div class="user-trip-table">
+               <table>
+                <tbody><tr>
+                  <th></th>
+                  <th>Overall</th>
+                  <th>REG</th>
+                  <th>DATA</th>
+                  <th>VOICE</th>
+                  <th>SMS</th>
+                </tr>
+                <tr>
+                  <td>VF AUS</td>
+                  <td><div class="circle bg-yellow">6</div></td>
+                  <td><div class="circle bg-green">7</div></td>
+                  <td><div class="circle bg-red">3</div></td>
+                  <td><div class="circle bg-green">8</div></td>
+                  <td><div class="circle bg-green">9</div></td>
+                </tr>
+                <tr>
+                  <td>TELSTRA</td>
+                  <td><div class="circle bg-green">7</div></td>
+                  <td><div class="circle bg-green">7</div></td>
+                  <td><div class="circle bg-green">7</div></td>
+                  <td><div class="circle bg-green">8</div></td>
+                  <td><div class="circle bg-green">9</div></td>
+                </tr>
+                <tr>
+                  <td>OPTUS</td>
+                  <td><div class="circle bg-yellow">5</div></td>
+                  <td><div class="circle bg-yellow">6</div></td>
+                  <td><div class="circle bg-yellow">5</div></td>
+                  <td><div class="circle bg-yellow">6</div></td>
+                  <td><div class="circle bg-green">8</div></td>
+                </tr>
+               </tbody></table><!--  --> 
+              </div><!-- user-trip-table -->
+          </div>
+
+          <div class="cur-sta-white-box">
+            <h4>Usage</h4>
+            <div class="usage-table">
+               <table>
+                <tbody><tr>
+                  <td></td>
+                  <td class="usage-tab-head"><span class="icon-1"></span>DATA</td>
+                  <td class="usage-tab-head"><span class="icon-2"></span>MO CALLS</td>
+                  <td class="usage-tab-head"><span class="icon-2"></span>MT CALLS</td>
+                  <td class="usage-tab-head"><span class="icon-3"></span>MO SMS</td>
+                </tr>
+                <tr>
+                  <td>Today</td>
+                  <td>232mb</td>
+                  <td>12</td>
+                  <td>11</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Trip</td>
+                  <td>728mb</td>
+                  <td>26</td>
+                  <td>34</td>
+                  <td>19</td>
+                </tr>
+              </tbody></table> 
+            </div><!-- usage-table -->
+          </div>
+
+          <div class="cur-sta-white-box">
+            <h4>Welcome SMS</h4>
+            <div class="welcome-sms" style="height: 130px;">
+            
+              <h5>28/01/2018 17:43 </h5>
+              <p>Welcome to Australia ! For £6 / day you can use your home 
+              voice, data and SMS bundle quotas as you would at home. 
+              Receiving calls and texts are FREE. For any issues call our 
+              Customer Care team at 5100. Have a lovely stay.</p>
+            
+            </div>
+          </div>
+
+
+          <div class="cur-sta-white-box">
+            <h4>Current Networks Service Status</h4>
+              <div class="user-trip-table">
+               <table>
+                <tbody><tr>
+                  <th></th>
+                  <th>2g  <br> reg</th>
+                  <th>3g  <br> reg</th>
+                  <th>LTE <br> reg</th>
+                  <th>data</th>
+                  <th>VOICE</th>
+                  <th>SMS</th>
+                </tr>
+                <tr>
+                  <td>VF AUS</td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-red"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                </tr>
+                <tr>
+                  <td>TELSTRA</td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-orange"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                </tr>
+                <tr>
+                  <td>OPTUS</td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                  <td><div class="circle2 bg-orange"></div></td>
+                  <td><div class="circle2 bg-orange"></div></td>
+                  <td><div class="circle2 bg-green"></div></td>
+                </tr>
+               </tbody></table><!--  --> 
+              </div><!-- user-trip-table -->
+          </div>
+          <div class="cur-sta-white-box">
+            <h4>Network Operation Updates</h4>
+            <div class="welcome-sms">
+              <h5>01/02/2018 12:23:23 </h5>
+              <p>CRITICAL SERVICE OUTAGE Vodafone Australia – Total Data Service Outage</p>
+              <h5>01/02/2018 12:32:32 </h5>
+              <p>Engineering Update VF AUS – Data Outage Expected to last 6 hours</p>
+            
+            </div>
+          </div>
+
+
+          <div class="cur-sta-box3">
+          <div class="cur-sta-white-box">
+            <h4>Service Timeline </h4>
+            <div id="service-time" data-highcharts-chart="0"><div id="highcharts-70c90vn-0" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 1185px; height: 200px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="1185" height="200" viewBox="0 0 1185 200"><desc>Created with Highcharts 6.1.4</desc><defs><clipPath id="highcharts-70c90vn-1"><rect x="0" y="0" width="1011" height="156" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1185" height="200" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="134" y="0" width="1011" height="156"></rect><g class="highcharts-grid highcharts-xaxis-grid " data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 143.5 0 L 143.5 156" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 886.5 0 L 886.5 156" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid " data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 134 156.5 L 1145 156.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 134 117.5 L 1145 117.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 134 78.5 L 1145 78.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 134 39.5 L 1145 39.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 134 -0.5 L 1145 -0.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="134" y="0" width="1011" height="156"></rect><g class="highcharts-axis highcharts-xaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="transparent" stroke-width="1" data-z-index="7" d="M 134 156.5 L 1145 156.5"></path></g><g class="highcharts-axis highcharts-yaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 134 0 L 134 156"></path></g><g class="highcharts-series-group" data-z-index="3"><g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-line-series " transform="translate(134,0) scale(1 1)" clip-path="url(#highcharts-70c90vn-1)"><path fill="none" d="M 9.9117647216991 156 L 133.80882354127 156 L 257.70588236085 117 L 381.60294118042 78 L 505.5 117 L 629.39705881958 117 L 753.29411763915 117 L 877.19117645873 78 L 1001.0882352783 117" class="highcharts-graph" data-z-index="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -0.08823527830089972 156 L 9.9117647216991 156 L 133.80882354127 156 L 257.70588236085 117 L 381.60294118042 78 L 505.5 117 L 629.39705881958 117 L 753.29411763915 117 L 877.19117645873 78 L 1001.0882352783 117 L 1011.0882352783 117" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="20" visibility="visible" data-z-index="2" class="highcharts-tracker-line"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-tracker " transform="translate(134,0) scale(1 1)"><path fill="#fe5c47" d="M 17 156 A 8 8 0 1 1 16.999996000000333 155.99200000133334 Z" class="highcharts-point"></path><path fill="#fe5c47" d="M 141 156 A 8 8 0 1 1 140.99999600000032 155.99200000133334 Z" class="highcharts-point"></path><path fill="#fe5c47" d="M 265 117 A 8 8 0 1 1 264.99999600000035 116.99200000133332 Z" class="highcharts-point"></path><path fill="#fe5c47" d="M 389 78 A 8 8 0 1 1 388.99999600000035 77.99200000133332 Z" class="highcharts-point"></path><path fill="#fe5c47" d="M 513 117 A 8 8 0 1 1 512.9999960000004 116.99200000133332 Z" class="highcharts-point"></path><path fill="#fe5c47" d="M 637 117 A 8 8 0 1 1 636.9999960000004 116.99200000133332 Z" class="highcharts-point"></path><path fill="#fe5c47" d="M 761 117 A 8 8 0 1 1 760.9999960000004 116.99200000133332 Z" class="highcharts-point"></path><path fill="#fe5c47" d="M 885 78 A 8 8 0 1 1 884.9999960000004 77.99200000133332 Z" class="highcharts-point"></path><path fill="#fe5c47" d="M 1009 117 A 8 8 0 1 1 1008.9999960000004 116.99200000133332 Z" class="highcharts-point"></path></g><g data-z-index="0.1" class="highcharts-series highcharts-series-1 highcharts-line-series " transform="translate(134,0) scale(1 1)" clip-path="url(#highcharts-70c90vn-1)"><path fill="none" d="M 9.9117647216991 156 L 133.80882354127 156 L 257.70588236085 117 L 381.60294118042 78 L 505.5 117 M 877.19117645873 78 L 1001.0882352783 78" class="highcharts-graph" data-z-index="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -0.08823527830089972 156 L 9.9117647216991 156 L 133.80882354127 156 L 257.70588236085 117 L 381.60294118042 78 L 505.5 117 L 515.5 117 M 867.19117645873 78 L 877.19117645873 78 L 1001.0882352783 78 L 1011.0882352783 78" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="20" visibility="visible" data-z-index="2" class="highcharts-tracker-line"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-1 highcharts-line-series highcharts-tracker " transform="translate(134,0) scale(1 1)"><path fill="#8cc14b" d="M 17 156 A 8 8 0 1 1 16.999996000000333 155.99200000133334 Z" class="highcharts-point"></path><path fill="#8cc14b" d="M 141 156 A 8 8 0 1 1 140.99999600000032 155.99200000133334 Z" class="highcharts-point"></path><path fill="#8cc14b" d="M 265 117 A 8 8 0 1 1 264.99999600000035 116.99200000133332 Z" class="highcharts-point"></path><path fill="#8cc14b" d="M 389 78 A 8 8 0 1 1 388.99999600000035 77.99200000133332 Z" class="highcharts-point"></path><path fill="#8cc14b" d="M 513 117 A 8 8 0 1 1 512.9999960000004 116.99200000133332 Z" class="highcharts-point"></path><path fill="#8cc14b" d="M 885 78 A 8 8 0 1 1 884.9999960000004 77.99200000133332 Z" class="highcharts-point"></path><path fill="#8cc14b" d="M 1009 78 A 8 8 0 1 1 1008.9999960000004 77.99200000133332 Z" class="highcharts-point"></path></g><g data-z-index="0.1" class="highcharts-series highcharts-series-2 highcharts-line-series " transform="translate(134,0) scale(1 1)" clip-path="url(#highcharts-70c90vn-1)"><path fill="none" d="M 629.39705881958 39 L 753.29411763915 39" class="highcharts-graph" data-z-index="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 619.39705881958 39 L 629.39705881958 39 L 753.29411763915 39 L 763.29411763915 39" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="20" visibility="visible" data-z-index="2" class="highcharts-tracker-line"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-2 highcharts-line-series highcharts-tracker " transform="translate(134,0) scale(1 1)"><path fill="#ffd960" d="M 637 39 A 8 8 0 1 1 636.9999960000004 38.99200000133333 Z" class="highcharts-point"></path><path fill="#ffd960" d="M 761 39 A 8 8 0 1 1 760.9999960000004 38.99200000133333 Z" class="highcharts-point"></path></g></g><text x="588" text-anchor="middle" class="highcharts-title" data-z-index="4" style="color:#333333;font-size:18px;fill:#333333;" y="14"></text><text x="588" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="14"></text><g class="highcharts-legend" data-z-index="7"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="8" height="8" visibility="hidden"></rect><g data-z-index="1"><g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels " data-z-index="7"><text x="143.9117647217" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="175" opacity="1">12:00</text><text x="887.32385412273" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="175" opacity="1">12:30</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7"><text x="119" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="159" opacity="1">SMS</text><text x="119" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="120" opacity="1"><tspan>Data Sessions</tspan></text><text x="119" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="81" opacity="1">Calls</text><text x="119" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="42" opacity="1">Registration</text></g><g class="highcharts-label highcharts-tooltip highcharts-color-undefined" style="pointer-events:none;white-space:nowrap;" data-z-index="8" transform="translate(304,-9999)" opacity="0" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box highcharts-shadow" d="M 3.5 0.5 L 174.5 0.5 C 177.5 0.5 177.5 0.5 177.5 3.5 L 177.5 42.5 C 177.5 45.5 177.5 45.5 174.5 45.5 L 93.5 45.5 87.5 51.5 81.5 45.5 3.5 45.5 C 0.5 45.5 0.5 45.5 0.5 42.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box highcharts-shadow" d="M 3.5 0.5 L 174.5 0.5 C 177.5 0.5 177.5 0.5 177.5 3.5 L 177.5 42.5 C 177.5 45.5 177.5 45.5 174.5 45.5 L 93.5 45.5 87.5 51.5 81.5 45.5 3.5 45.5 C 0.5 45.5 0.5 45.5 0.5 42.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box highcharts-shadow" d="M 3.5 0.5 L 174.5 0.5 C 177.5 0.5 177.5 0.5 177.5 3.5 L 177.5 42.5 C 177.5 45.5 177.5 45.5 174.5 45.5 L 93.5 45.5 87.5 51.5 81.5 45.5 3.5 45.5 C 0.5 45.5 0.5 45.5 0.5 42.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 174.5 0.5 C 177.5 0.5 177.5 0.5 177.5 3.5 L 177.5 42.5 C 177.5 45.5 177.5 45.5 174.5 45.5 L 93.5 45.5 87.5 51.5 81.5 45.5 3.5 45.5 C 0.5 45.5 0.5 45.5 0.5 42.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#8cc14b" stroke-width="1"></path><text x="8" data-z-index="1" style="font-size:12px;color:#333333;cursor:default;fill:#333333;" y="20"><tspan style="font-size: 10px">Thursday, Feb  1, 12:09:59.976</tspan><tspan x="8" dy="15">Event successful</tspan></text></g></svg></div></div>
+          </div>
+        </div>
+
+
+
+        <div class="cur-sta-box4">
+          <div class="cur-sta-white-box">
+            <h4>Event History</h4>
+            <div class="event-history">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Status</th>
+                    <th>Country</th>
+                    <th>Network</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>12:14:59  </td>
+                    <td>01/02/2018  </td>
+                    <td>Subscriber calls +4472142764213 </td>
+                    <td><span class="circle bg-green"></span>Success</td>
+                    <td>Australia</td>
+                    <td>Vodafone Australia</td>
+                  </tr>
+                  <tr>
+                    <td>12:19:59  </td>
+                    <td>01/02/2018  </td>
+                    <td>Data Session Created </td>
+                    <td><span class="circle bg-green"></span>Success</td>
+                    <td>Australia</td>
+                    <td>Vodafone Australia</td>
+                  </tr>
+                  <tr>
+                    <td>12:23:23  </td>
+                    <td>01/02/2018  </td>
+                    <td>Data Session Creation Failed. Invalid Parameter.</td>
+                    <td><span class="circle bg-red"></span>Failed</td>
+                    <td>Australia</td>
+                    <td>Vodafone Australia</td>
+                  </tr>
+                  <tr>
+                    <td>12:34:23  </td>
+                    <td>01/02/2018  </td>
+                    <td>Subscriber calls +4472142764213</td>
+                    <td><span class="circle bg-green"></span>Success</td>
+                    <td>Australia</td>
+                    <td>Vodafone Australia</td>
+                  </tr>
+                  <tr>
+                    <td>12:39:23  </td>
+                    <td>01/02/2018  </td>
+                    <td>Data Session Creation Failed. Invalid Parameter.</td>
+                    <td><span class="circle bg-red"></span>Failed</td>
+                    <td>Australia</td>
+                    <td>Vodafone Australia</td>
+                  </tr>
+                  <tr>
+                    <td>12:39:45    </td>
+                    <td>01/02/2018  </td>
+                    <td>Subscriber calls +4472142764213 </td>
+                    <td><span class="circle bg-green"></span>Success</td>
+                    <td>Australia</td>
+                    <td>Vodafone Australia</td>
+                  </tr>
+                  <tr>
+                    <td>12:55:47   </td>
+                    <td>01/02/2018  </td>
+                    <td>Data Session Creation Failed. Invalid Parameter. </td>
+                    <td><span class="circle bg-red"></span>Failed</td>
+                    <td>Australia</td>
+                    <td>Vodafone Australia</td>
+                  </tr>
+                  <tr>
+                    <td>13:14:32   </td>
+                    <td>01/02/2018  </td>
+                    <td>Data Session Creation Failed. Invalid Parameter. </td>
+                    <td><span class="circle bg-red"></span>Failed</td>
+                    <td>Australia</td>
+                    <td>Vodafone Australia</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- event-history -->
+          </div><!-- cur-sta-white-box -->
+        </div>
+
+
+
+
+        </div>
+    </div>
+
+
+         
+        </div>
+
+
+
+
+
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <!-- JS For Highcharts -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <!-- For Data-RCX Starts-->
+        <script type="text/javascript">
+            Highcharts.chart('data-rcx', {
+
+                title: {
+                    text: ''
+                },
+                // subtitle: {
+                //     text: 'Source: thesolarfoundation.com'
+                // },
+                exporting: {
+                    enabled: false
+                },
+                credits: {
+                    enabled: false
+                },
+
+                yAxis: {
+                    title: {
+                        text: 'R-CX Score'
+                    },
+                    tickInterval: 2,
+                    max: 10,
+
+                },
+                xAxis: {
+                    title: {
+                        text: 'TIME'
+                    },
+                    // tickInterval: 1,
+                    minRange: 1,
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        day: '00:00'
+                    },
+
+                    labels: {
+                        rotation: 0
+                    },
+
+                    tickInterval: 3 * 3600 * 1000,
+
+                },
+                legend: {
+                    // symbol: 'circle',
+                    layout: 'vertical',
+                    align: 'left',
+                    verticalAlign: 'bottom',
+                    symbolHeight: 10,
+                    symbolWidth: 10,
+                    symbolRadius: 0,
+                    y: 0,
+                    padding: 3,
+                },
+
+                plotOptions: {
+                    series: {
+                        label: {
+                            connectorAllowed: false,
+                            enabled: false
+                        },
+                        marker: {
+                            enabled: true
+                        },
+                        pointStart: Date.UTC(2018, 01, 01, 07, 30),
+                        pointInterval: 10 * 1800 * 250
+                                // showInLegend: false,
+                                // pointStart: 21
+                    }
+                },
+
+                series: [{
+                        showInLegend: false,
+                        name: 'Vodafone Aus',
+                        data: [10, 9.5, 9.1, 9.0, 9.2, 0, 0, 0],
+                        color: '#f4341b',
+                        marker: {enabled: false}
+                    }, {
+                        showInLegend: false,
+                        name: 'Telstra',
+                        data: [8, 8.5, 8.2, 8.9, 8.8, 8.7, 8.9, 9.0],
+                        color: '#1d8acf',
+                        marker: {enabled: false}
+                    }, {
+                        showInLegend: false,
+                        name: 'Optus',
+                        data: [6, 6.5, 6.2, 6.1, 6.3, 6.4, 6.2, 6.1],
+                        color: '#f2be09',
+                        marker: {enabled: false}
+                    },
+                    {
+                        name: "Vodafone Australia",
+                        data: {},
+                        color: '#f4341b',
+                        marker: {symbol: 'circle', radius: 12}
+                    },
+                    {
+                        name: "Telstra",
+                        data: {},
+                        color: '#1d8acf',
+                        marker: {symbol: 'circle', radius: 12}
+                    },
+                    {
+                        name: "Optus",
+                        data: {},
+                        color: '#f2be09',
+                        marker: {symbol: 'circle', radius: 12}
+                    }],
+
+                responsive: {
+                    rules: [{
+                            condition: {
+                                maxWidth: 500
+                            },
+                            chartOptions: {
+                                legend: {
+                                    layout: 'horizontal',
+                                    align: 'center',
+                                    verticalAlign: 'bottom'
+                                }
+                            }
+                        }]
+                }
+
+            });
+        </script>
+        <!-- For Data-RCX Ends-->
+
+
+        <!-- For Premium Starts-->
+        <script type="text/javascript">
+            Highcharts.chart('premium', {
+
+                title: {
+                    text: ''
+                },
+                // subtitle: {
+                //     text: 'Source: thesolarfoundation.com'
+                // },
+                exporting: {
+                    enabled: false
+                },
+                credits: {
+                    enabled: false
+                },
+
+                yAxis: {
+                    title: {
+                        text: '# Roamers'
+                    },
+                    tickInterval: 50,
+                },
+
+                xAxis: {
+                    title: {
+                        text: 'TIME'
+                    },
+                    // tickInterval: 1,
+                    minRange: 1,
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        day: '00:00'
+                    },
+
+                    labels: {
+                        rotation: 0
+                    },
+
+                    tickInterval: 3 * 3600 * 1000,
+
+                },
+
+                legend: {
+                    // symbol: 'circle',
+                    layout: 'vertical',
+                    align: 'left',
+                    verticalAlign: 'bottom',
+                    symbolHeight: 10,
+                    symbolWidth: 10,
+                    symbolRadius: 0,
+                    y: 0,
+                    padding: 3
+                },
+
+                plotOptions: {
+                    series: {
+                        label: {
+                            connectorAllowed: false,
+                            enabled: false
+                        },
+                        marker: {
+                            enabled: true
+                        },
+                        pointStart: Date.UTC(2018, 01, 01, 10, 30),
+                        pointInterval: 10 * 1800 * 100
+
+                                // showInLegend: false,
+                                // pointStart: 21
+                    }
+                },
+
+                series: [{
+                        showInLegend: false,
+                        name: 'Vodafone Aus',
+                        data: [370, 240, 320, 330, 304, 0, 0, 0, 0],
+                        color: '#f4341b',
+                        marker: {enabled: false}
+                    }, {
+                        showInLegend: false,
+                        name: 'Telstra',
+                        data: [0, 0, 0, 0, 0, 350, 350, 344, 357],
+                        color: '#1d8acf',
+                        marker: {enabled: false}
+                    }, {
+                        showInLegend: false,
+                        name: 'Optus',
+                        data: [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        color: '#f2be09',
+                        marker: {enabled: false}
+                    },
+                    {
+                        name: "Vodafone Australia",
+                        data: {},
+                        color: '#f4341b',
+                        marker: {symbol: 'circle', radius: 12}
+                    },
+                    {
+                        name: "Telstra",
+                        data: {},
+                        color: '#1d8acf',
+                        marker: {symbol: 'circle', radius: 12}
+                    },
+                    {
+                        name: "Optus",
+                        data: {},
+                        color: '#f2be09',
+                        marker: {symbol: 'circle', radius: 12}
+                    }],
+
+                responsive: {
+                    rules: [{
+                            condition: {
+                                maxWidth: 500
+                            },
+                            chartOptions: {
+                                legend: {
+                                    layout: 'horizontal',
+                                    align: 'center',
+                                    verticalAlign: 'bottom'
+                                }
+                            }
+                        }]
+                }
+            });
+        </script>
+        <!-- For Premium Ends-->
+
+
+        <!-- For Non-Premium Starts-->
+        <script type="text/javascript">
+            Highcharts.chart('non-premium', {
+
+                title: {
+                    text: ''
+                },
+                // subtitle: {
+                //     text: 'Source: thesolarfoundation.com'
+                // },
+                exporting: {
+                    enabled: false
+                },
+                credits: {
+                    enabled: false
+                },
+
+                yAxis: {
+                    title: {
+                        text: 'R-CX Score'
+                    },
+                    tickInterval: 50
+                },
+                xAxis: {
+                    title: {
+                        text: 'TIME'
+                    },
+                    // tickInterval: 1,
+                    minRange: 1,
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        day: '00:00'
+                    },
+
+                    labels: {
+                        rotation: 0
+                    },
+                    tickInterval: 3 * 3600 * 1000,
+                },
+                legend: {
+                    // symbol: 'circle',
+                    layout: 'vertical',
+                    align: 'left',
+                    verticalAlign: 'bottom',
+                    symbolHeight: 10,
+                    symbolWidth: 10,
+                    symbolRadius: 0,
+                    y: 0,
+                    padding: 3,
+                },
+
+                plotOptions: {
+                    series: {
+                        label: {
+                            connectorAllowed: false,
+                            enabled: false
+                        },
+                        marker: {
+                            enabled: true
+                        },
+                        pointStart: Date.UTC(2006, 0, 01, 21),
+                        pointInterval: 3 * 3600 * 1000
+                                // showInLegend: false,
+                                // pointStart: 21
+                    }
+                },
+
+                series: [{
+                        showInLegend: false,
+                        name: 'Vodafone Aus',
+                        data: [370, 340, 320, 350, 320, 320],
+                        color: '#f4341b',
+                        marker: {enabled: false}
+                    }, {
+                        showInLegend: false,
+                        name: 'Telstra',
+                        data: [270, 220, 220, 255, 250, 220],
+                        color: '#1d8acf',
+                        marker: {enabled: false}
+                    }, {
+                        showInLegend: false,
+                        name: 'Optus',
+                        data: [50, 50, 50, 65, 60, 70],
+                        color: '#f2be09',
+                        marker: {enabled: false}
+                    },
+                    {
+                        name: "Vodafone Australia",
+                        data: {},
+                        color: '#f4341b',
+                        marker: {symbol: 'circle', radius: 12}
+                    },
+                    {
+                        name: "Telstra",
+                        data: {},
+                        color: '#1d8acf',
+                        marker: {symbol: 'circle', radius: 12}
+                    },
+                    {
+                        name: "Optus",
+                        data: {},
+                        color: '#f2be09',
+                        marker: {symbol: 'circle', radius: 12}
+                    }],
+
+                responsive: {
+                    rules: [{
+                            condition: {
+                                maxWidth: 500
+                            },
+                            chartOptions: {
+                                legend: {
+                                    layout: 'horizontal',
+                                    align: 'center',
+                                    verticalAlign: 'bottom'
+                                }
+                            }
+                        }]
+                }
+
+            });
+        </script>
+        <!-- For Non-Premium Ends-->
+    </body>
+</html>
